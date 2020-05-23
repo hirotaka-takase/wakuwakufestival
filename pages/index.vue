@@ -12,7 +12,7 @@
           <div style="position: relative;" class="py-4">
             <p class="text_aiken">愛犬家大集合!</p>
             <v-chip
-              class="chip pa-3 caption font-weight-black"
+              class="chip pa-3 body-1 caption fuwafuwa font-weight-black"
               color="error"
               text-color="white"
               x-large
@@ -87,8 +87,25 @@ export default {
 .chip {
   position: absolute;
   bottom: 10px;
-  right: 270px;
+  right: 280px;
 } 
+.fuwafuwa {
+-webkit-animation:fuwafuwa 3s infinite linear alternate;
+animation:fuwafuwa 3s infinite linear alternate;
+}
+
+@-webkit-keyframes fuwafuwa {
+0% {-webkit-transform:translate(0, 0) rotate(-5deg);}
+50% {-webkit-transform:translate(0, -5px) rotate(0deg);}
+100% {-webkit-transform:translate(0, 0)rotate(5deg);}
+}
+
+@keyframes fuwafuwa {
+0% {transform:translate(0, 0) rotate(-5deg);}
+50% {transform:translate(0, -5px) rotate(0deg);}
+100% {transform:translate(0, 0)rotate(5deg);}
+}
+
 @media (max-width: 750px) {
 #fv {
    max-height: 250px;
@@ -98,7 +115,7 @@ export default {
   padding-top: 0px !important;
 }
   .chip {
-  bottom: 10px;
+  bottom: 20px;
   right: 40px;
 }
 }
