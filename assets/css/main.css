@@ -1,0 +1,9 @@
+.wf-roundedmplus1c { 
+    font-family: "M PLUS Rounded 1c"; 
+}
+.page-enter {
+    opacity: 0;
+  }
+.page-enter-active {
+    transition: opacity 3s;
+}

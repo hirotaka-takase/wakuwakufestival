@@ -8,9 +8,9 @@
     </v-img>
     <v-container>
       <v-layout column justify-center align-center class="layout1 text-center">
-        <v-flex xs12 sm8 md6 class="py-4">
+        <v-flex xs12 sm8 md6 class="py-4 font-weight-bold" style="margin-bottom: 90px;">
           <div style="position: relative;" class="py-4">
-            <p class="text_aiken">愛犬家大集合!</p>
+            <p class="text_aiken font-weight-black" style="letter-spacing: 0.09em;">愛犬家大集合!</p>
             <v-chip
               class="chip pa-3 body-1 caption fuwafuwa font-weight-black"
               color="error"
@@ -20,12 +20,12 @@
               お子様から大人まで<br>ご家族で楽しめるイベントです!
             </v-chip>
           </div>
-          <v-row>
-            <v-col cols="12" md="12" sm="12" class="pa-0 headline">東海ペットイベント!</v-col>
-            <v-col cols="12" md="12" sm="12" class="pt-0 headline mb-4">たくさんのワンちゃんも見られますよ!</v-col>
-            <v-col cols="12" md="12" sm="12" class="headline">交流広場</v-col>
+          <v-row style="margin-bottom: 30px;">
+            <v-col cols="12" md="12" sm="12" class="pa-0 display-1 font-weight-black">東海ペットイベント!</v-col>
+            <v-col cols="12" md="12" sm="12" class="pt-0 display-1 mb-4 font-weight-black">たくさんのワンちゃんも見られますよ!</v-col>
           </v-row>
-          <v-row class="text-left">
+          <v-row class="kouryu text-center py-4" style="border: 1px solid #000;">
+            <v-col cols="12" md="12" sm="12" class="headline font-weight-black pb-0" style="color: #1976d2;">交流広場</v-col>
             <v-col cols="12" md="6" sm="12">
               <ul>
                   <li>
@@ -43,7 +43,7 @@
                 </ul>
             </v-col>
             <v-col cols="12" md="6" sm="12">
-              <ul>
+              <ul class="">
                   <li>
                     ・縁日・キッズパーク
                   </li>
@@ -57,22 +57,22 @@
             </v-col>
             <v-col class="py-4 mb-4" cols="12">
               <h2 class="text-center py-2">
-                <v-btn x-large height="80" outlined color="primary">2020わくわく<br>フェスティバル東海とは</v-btn>
+                <v-btn x-large height="80" to="/about" outlined color="primary">2020わくわく<br>フェスティバル東海とは</v-btn>
               </h2>
             </v-col>
           </v-row>
         </v-flex>   
         <v-flex class="py-4">
-          <h3 class="headline py-4 mb-4">日時・場所</h3>
+          <h3 class="display-1 font-weight-bold py-4 mb-4" style="color: #ff5252;"><i class="fas fa-clock px-1"></i>日時・場所</h3>
           <v-row>
-            <v-col cols="12" md="6" sm="12">
+            <v-col class="font-weight-bold" cols="12" md="6" sm="12">
               <p>日時</p>
               <p class="mb-4 pb-4">4月25日（土）4月26日（日）<br>10：00～17：00</p>
             </v-col> 
-            <v-col cols="12" md="6" sm="12">
+            <v-col class="font-weight-black" cols="12" md="6" sm="12">
               <p class="mb-0">会場</p>
               <p class="mb-4">（10,000人収容）</p>
-              <p><a href="https://www.aichiskyexpo.com/access/" target="_blank">AICHI SKY EXPO 屋内ホールA</a><br>愛知県常滑市セントレア5丁目10番地1号<br>（名鉄中部国際空港駅より徒歩5分）</p>
+              <p><a href="https://www.aichiskyexpo.com/access/" target="_blank" class="font-weight-medium">AICHI SKY EXPO 屋内ホールA</a><br>愛知県常滑市セントレア5丁目10番地1号<br>（名鉄中部国際空港駅より徒歩5分）</p>
               <p>〔お車でお越しのお客様〕<br>セントレア東ICを降りて直進約2Kｍ<br>大駐車場有（24時間最大800円）</p>
             </v-col>
             <v-col>
@@ -80,8 +80,8 @@
           </v-row>
         </v-flex>
         <v-flex class="py-4">
-          <h3 class="headline py-4 mb-4">料金</h3>
-          <v-row class="pb-4 mb-4">
+          <h3 class="display-1 font-weight-bold py-4 mb-4" style="color: #ff5252;"><i class="fas fa-clock px-1"></i>料金</h3>
+          <v-row class="pb-4 mb-4 font-weight-bold">
             <v-col cols="12" md="6" sm="12">
               <p>前売り券</p>
               <p>（ローソン、セブンイレブン、ファミリーマート各コンビニにて2020年2月15日（土）より販売開始）</p>
@@ -92,18 +92,18 @@
               <p>大人（高校生以上）：1,600円<br>子供（中学生以下）：900円</p>
             </v-col>
           </v-row>
-          <p class="mb-0">※3歳未満無料</p>
-          <p class="mb-4">※ご入場の際、お子様には縁日、キッズパークで使えるお楽しみ券を１枚進呈します。</p>
+          <p class="mb-0 font-weight-bold">※3歳未満無料</p>
+          <p class="mb-4 font-weight-bold">※ご入場の際、お子様には縁日、キッズパークで使えるお楽しみ券を１枚進呈します。</p>
         </v-flex>  
       </v-layout>
       <v-card
       width="700"
       class="mb-5 white--text"
       color="pink">
-        <p class="card_title mb-0 py-3 px-5" style="border-bottom: 1px solid #fff;">
+        <p class="card_title mb-0 py-3 px-5 font-weight-black" style="border-bottom: 1px solid #fff;">
         交流広場
         </p>
-        <v-card-text class="white--text card-text">
+        <v-card-text class="white--text card-text font-weight-bold">
             <p>「オフ会しよう!」オフ会には最適広場! <br>事前にお申入いただければスペース確保いたします。(無料）</p>
             <p>「ペットカット選手権」ライブ形式。好みのスタイル見つけて下さい。</p>
             <p>「わん芸 IT's ショータイム」芸達者なワンちゃんが登場します。</p>
@@ -120,8 +120,8 @@
       width="480"
       class="ml-auto mr-9 mb-5 white--text"
       color="#1F7087">
-        <p class="card_title mb-0 py-3 px-5" style="border-bottom: 1px solid #fff;">じゃんけん大会</p>
-        <v-card-text class="card-text white--text">
+        <p class="card_title mb-0 py-3 px-5 font-weight-black" style="border-bottom: 1px solid #fff;">じゃんけん大会</p>
+        <v-card-text class="card-text white--text font-weight-bold">
           <p>ご来場者様全員でじゃんけん大会! </p>
           <p>一日3回開催豪華賞品ご期待下さい</p>
           <p>その他催しありますよ!楽しみにして下さい! </p>
@@ -131,9 +131,9 @@
       width="700"
       class="mb-5 white--text"
       color="#952175">
-        <p class="card_title mb-0 py-3 px-5" style="border-bottom: 1px solid #fff;">縁日コーナー・<br>キッズパーク</p>
+        <p class="card_title mb-0 py-3 px-5 font-weight-black" style="border-bottom: 1px solid #fff;">縁日コーナー・<br>キッズパーク</p>
         <v-divider></v-divider>
-        <v-card-text class="white--text card-text">
+        <v-card-text class="white--text card-text font-weight-black">
           <div class="arrow d-flex mb-6" style="position: relative;">
             <p style="width: 20%;">縁日</p>
             <ul>
@@ -173,20 +173,20 @@
       width="600"
       class="ml-auto mr-9 mb-9 white--text"
       color="#4169E1">
-        <p class="card_title mb-0 py-3 px-5" style="border-bottom: 1px solid #fff;">フードコート</p>
-        <v-card-text class="white--text card-text">
+        <p class="card_title mb-0 py-3 px-5 font-weight-black" style="border-bottom: 1px solid #fff;">フードコート</p>
+        <v-card-text class="white--text card-text font-weight-bold">
           <p>飲食ゾーンあります</p>
           <p>・カレーライス・牛丼・焼きそば / ・タピオカジュース・フレッシュジュース</p>
           <p>・フランクフルト・サンドウィッチ / ・ウーロン茶・コーラ等</p>
         </v-card-text>
       </v-card>
-      <p class="px-5 text-center silver-text" style="color: #444444;">※シルバー優先席あります。ごゆっくりおくつろぎください</p>
+      <p class="px-5 text-center silver-text font-weight-bold" style="color: #444444;">※シルバー優先席あります。ごゆっくりおくつろぎください</p>
       <v-layout column justify-center align-center class="text-center py-4 mb-4">
       <v-card style="position: relative;" class="mb-4">
           <v-chip
             class="chip2 pa-3 fuwafuwa font-weight-black"
             style="z-index: 1;"
-            color="success"
+            color="error"
             text-color="white"
             x-large>
               わくフェス
@@ -198,22 +198,23 @@
         >
           <v-card-title
           id="banner-text">
-            <v-row>
+            <v-row class="font-weight-bold wf-roundedmplus1c">
               <v-col cols="12" md="12"><p style="color: #6495ED">キッズダンスコンテスト<br><small>「子供と言ってあなどらないで！」</small></p></v-col>
               <v-col cols="12" md="12"><p style="color: #FA8072">ご当地アイドル男女でショー<br><small>「どんなかんじ？こんなかんじ！」</small></p></v-col>
             </v-row>
           </v-card-title>
         </v-img>
-        <v-card-subtitle class="pb-0">東京から急遽出演決定！</v-card-subtitle>
-        <v-card-text class="text--primary">
+        <v-card-text class="text--primary font-weight-black headline">東京から急遽出演決定！</v-card-text>
+        <v-card-text class="text--primary title font-weight-bold">
+          <p><span class="display-1 font-weight-bold" style="line-height: 2.0;">男性ボーカルユニットBLACK IRIS</span><br>オリコンデイリーランキング1位<br>オリコンウィークリーランキング3位</p>
         </v-card-text>
-          <p><span>男性</span>ボーカルユニットBLACK IRIS<br>オリコンデイリーランキング1位<br>オリコンウィークリーランキング3位</p>
         <v-card-actions class="justify-center">
           <v-btn
             color="orange"
             text
+            to="/dance"
             class="font-weight-black"
-            style="font-size: 20px;"
+            style="font-size: 22px; border-bottom: 2px solid #ff9800; boder-radius: 0;"
           >
             詳細へ
           </v-btn>
@@ -262,8 +263,12 @@ ul {
   margin-bottom: 180px;
 }
 .text_aiken {
-  font-size: 50px;
-  padding-bottom: 90px;
+  font-size: 75px;
+  padding-bottom: 120px;
+  color: #ACB6E5;
+  background: -webkit-linear-gradient(0deg, #ACB6E5, #86FDE8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .chip {
   position: absolute;
@@ -292,7 +297,9 @@ animation:fuwafuwa 3s infinite linear alternate;
 50% {transform:translate(0, -5px) rotate(0deg);}
 100% {transform:translate(0, 0)rotate(5deg);}
 }
-
+.layout1 ul li {
+  margin: 20px 0px;
+}
 .card_title {
   font-size: 30px;
 }
@@ -331,12 +338,10 @@ animation:fuwafuwa 3s infinite linear alternate;
 
 #banner-text p {
   font-size: 2.8rem!important;
-  font-weight: bold;
   line-height: 1.1;
 }
 #banner-text small {
   font-size: 1.5rem!important;
-  font-weight: lighter;
 }
 .btns {
   width: 300px;
@@ -346,15 +351,20 @@ animation:fuwafuwa 3s infinite linear alternate;
    max-height: 250px;
 }
 .layout1 {
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 .text_aiken {
-  font-size: 43px;
+  font-size: 50px;
   padding-top: 0px !important;
+  padding-bottom: 90px;
 }
 .chip {
   bottom: 20px;
   right: 40px;
+}
+.kouryu {
+  width: 100%;
+  margin: 0 auto;
 }
 .arrow {
   padding-bottom: 140px;
@@ -390,12 +400,10 @@ animation:fuwafuwa 3s infinite linear alternate;
 }
 #banner-text p {
   font-size: 1.7rem!important;
-  font-weight: bold;
   line-height: 1.1;
 }
 #banner-text small {
   font-size: 1.2rem!important;
-  font-weight: lighter;
 }
 .chip2 {
 left: -10px;

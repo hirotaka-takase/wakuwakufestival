@@ -30,7 +30,9 @@
       <v-toolbar-title class="white--text" v-text="title" />
     </v-app-bar>
     <v-content>
+      <transition name="page">
       <nuxt />
+      </transition>
     </v-content>
     <v-footer color="warning" class="lighten-1" padless>
       <v-row class="py-3 white--text text-center" no-gutters>
