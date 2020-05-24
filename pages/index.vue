@@ -6,7 +6,7 @@
     width="100%"
     alt="わくわくフェスティバル">
     </v-img>
-    <v-container>
+    <v-container  v-scroll="handleScroll" class="box">
       <v-layout column justify-center align-center class="layout1 text-center">
         <v-flex xs12 sm8 md6 class="py-4 font-weight-bold" style="margin-bottom: 90px;">
           <div style="position: relative;" class="py-4">
@@ -251,11 +251,26 @@ export default {
         banner: require("~/assets/img/bg1.jpg")
       }
     }
+  },
+  methods: {
+    handleScroll: function(evt, el) {
+      if (window.scrollY > 50) {
+        el.setAttribute(
+          "style",
+          "opacity: 1; transform: translate3d(0, -30px, 0)"
+        );
+      }
+      return window.scrollY > 100;
+    }
   }
 }
 </script>
 
 <style>
+.box {
+  opacity: 0;
+  transition: 2.7s all cubic-bezier(0.42, 0, 0.58, 1.0);
+}
 ul {
   list-style-type: none;
 }
