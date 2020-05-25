@@ -6,11 +6,23 @@
     width="100%"
     alt="わくわくフェスティバル">
     </v-img>
-    <v-container  v-scroll="handleScroll" class="box">
+    <v-parallax
+    height="250"
+    class="parallax"
+    :src="img_src.test">
+      <v-row
+        align="center"
+        justify="center"
+      >
+        <v-col class="text-center" cols="12">
+          <p v-scroll="handleScroll" class="mb-0 text_aiken box font-weight-black" style="letter-spacing: 0.4rem !important;">愛犬家大集合!</p>
+        </v-col>
+      </v-row>
+    </v-parallax>
+    <v-container v-scroll="handleScroll" class="box">
       <v-layout column justify-center align-center class="layout1 text-center">
         <v-flex xs12 sm8 md6 class="py-4 font-weight-bold" style="margin-bottom: 90px;">
-          <div style="position: relative;" class="py-4">
-            <p class="text_aiken font-weight-black" style="letter-spacing: 0.09em;">愛犬家大集合!</p>
+          <v-row style="margin-bottom: 30px; position: relative;">
             <v-chip
               class="chip pa-3 body-1 caption fuwafuwa font-weight-black"
               color="error"
@@ -19,13 +31,11 @@
             >
               お子様から大人まで<br>ご家族で楽しめるイベントです!
             </v-chip>
-          </div>
-          <v-row style="margin-bottom: 30px;">
             <v-col cols="12" md="12" sm="12" class="pa-0 display-1 font-weight-black">東海ペットイベント!</v-col>
             <v-col cols="12" md="12" sm="12" class="pt-0 display-1 mb-4 font-weight-black">たくさんのワンちゃんも見られますよ!</v-col>
           </v-row>
           <v-row class="kouryu text-center py-4" style="border: 1px solid #000;">
-            <v-col cols="12" md="12" sm="12" class="headline font-weight-black pb-0" style="color: #1976d2;">交流広場</v-col>
+            <v-col cols="12" md="12" sm="12" class="display-1 font-weight-black pb-0" style="color: #1976d2;">交流広場</v-col>
             <v-col cols="12" md="6" sm="12">
               <ul>
                   <li>
@@ -248,7 +258,8 @@ export default {
     return {
       img_src: {
         fv: require("~/assets/img/fv.jpg"),
-        banner: require("~/assets/img/bg1.jpg")
+        banner: require("~/assets/img/bg1.jpg"),
+        test: require("~/assets/img/dog1.jpg"),
       }
     }
   },
@@ -271,6 +282,9 @@ export default {
   opacity: 0;
   transition: 2.7s all cubic-bezier(0.42, 0, 0.58, 1.0);
 }
+.parallax {
+  margin-bottom: 180px;
+}
 ul {
   list-style-type: none;
 }
@@ -279,15 +293,14 @@ ul {
 }
 .text_aiken {
   font-size: 75px;
-  padding-bottom: 120px;
-  color: #ACB6E5;
-  background: -webkit-linear-gradient(0deg, #ACB6E5, #86FDE8);
+  color: #FF7C00;
+  background: -webkit-linear-gradient(top, #FFB76B 0%, #FFA73D 50%, #FF7C00 51%, #FF7F04 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .chip {
   position: absolute;
-  bottom: 25px;
+  top: -80px;
   right: 280px;
 }
 .chip2 {
@@ -365,16 +378,17 @@ animation:fuwafuwa 3s infinite linear alternate;
 #fv {
    max-height: 250px;
 }
+.parallax {
+  margin-bottom: 120px;
+}
 .layout1 {
   margin-bottom: 90px;
 }
 .text_aiken {
   font-size: 50px;
-  padding-top: 0px !important;
-  padding-bottom: 90px;
 }
 .chip {
-  bottom: 20px;
+  top: -80px;
   right: 40px;
 }
 .kouryu {
