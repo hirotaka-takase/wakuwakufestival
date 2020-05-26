@@ -29,10 +29,10 @@
     background-color="#fafafa"
     color="warning"
 >
-        <v-tab width="50%" to="dance">
+        <v-tab width="50%" to="contest">
         コンテスト
         </v-tab>
-        <v-tab width="50%" to="idol">
+        <v-tab width="50%" to="show">
         ご当地アイドルでショー
         </v-tab>
     </v-tabs>
