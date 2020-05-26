@@ -24,9 +24,9 @@
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app color="warning">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <nuxt-link to="/" class="pl-5 pr-1"><i class="fas fa-paw white--text" style="font-size: 20px;"></i></nuxt-link>
-      <nuxt-link to="/" class="white--text headline font-weight-black" style="text-decoration: none;" v-text="title">
-      </nuxt-link>
+      <nuxt-link to="/" class="pl-5 pr-1"><i class="gradation fas fa-paw" style="font-size: 20px;"></i></nuxt-link>
+      <nuxt-link to="/" class="headline font-weight-black gradation " style="text-decoration: none;" v-text="title"></nuxt-link>
+      <nuxt-link to="/" class="pl-1"><i class="gradation fas fa-paw" style="font-size: 20px;"></i></nuxt-link>
     </v-app-bar>
     <v-content>
       <transition name="page">
@@ -134,3 +134,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.gradation {
+  background: -webkit-linear-gradient(0deg, #2196f3, #4caf50, #ff5252);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</style>
