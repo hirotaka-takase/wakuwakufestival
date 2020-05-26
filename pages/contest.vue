@@ -163,7 +163,7 @@
                     </li>
                 </ul>
             <div align="center">
-              <v-btn to="/participants_dance" class="ma-2" x-large outlined color="primary" dark>エントリーページへ</v-btn> 
+              <v-btn to="/form/participants_contest" class="ma-2" x-large outlined color="primary" dark>エントリーページへ</v-btn> 
             </div>
           </v-card-text>
         </v-card>

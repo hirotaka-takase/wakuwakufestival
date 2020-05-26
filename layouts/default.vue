@@ -88,7 +88,7 @@ export default {
         {
           icon: 'mdi-chart-bubble',
           title: 'ダンスコンテスト',
-          to: '/contest'
+          to: '/form/contest'
         },
         {
           icon: 'mdi-chart-bubble',
@@ -103,7 +103,7 @@ export default {
         {
           icon: 'mdi-chart-bubble',
           title: 'お問い合わせ',
-          to: '/contact'
+          to: '/form/contact'
         }
       ],
       footerLinks: [

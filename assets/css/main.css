@@ -25,5 +25,8 @@
   @media (max-width: 750px) {
     #top-text {
         font-size: 30px;
-      }      
+      }   
+      iframe {
+        width: 100%;
+      }   
   }  
