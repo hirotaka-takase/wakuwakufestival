@@ -6,7 +6,7 @@
       :clipped="clipped"
       fixed
       app
-      dark
+      color="warning"
     >
       <v-list>
         <v-list-item
@@ -16,18 +16,17 @@
           router
           exact
         >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title class="white--text" v-text="item.title" />
+            <v-list-item-title class="white--text font-weight-black " v-text="item.title" />
           </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app color="warning">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title class="white--text" v-text="title" />
+      <nuxt-link to="/" class="pl-5 pr-1"><i class="fas fa-paw white--text" style="font-size: 20px;"></i></nuxt-link>
+      <nuxt-link to="/" class="white--text headline font-weight-black" style="text-decoration: none;" v-text="title">
+      </nuxt-link>
     </v-app-bar>
     <v-content>
       <transition name="page">
@@ -81,27 +80,22 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
           title: 'HOME',
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
+          title: 'わくフェスとは',
+          to: '/about'
+        },
+        {
           title: 'ダンスコンテスト',
-          to: '/form/contest'
+          to: '/contest'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'アイドル男女でショー',
-          to: '/show'
-        },
-        {
-          icon: 'mdi-chart-bubble',
           title: '愛犬家の皆様へ',
           to: '/companion'
         },
         {
-          icon: 'mdi-chart-bubble',
           title: 'お問い合わせ',
           to: '/form/contact'
         }
