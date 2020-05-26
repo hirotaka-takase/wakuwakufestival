@@ -222,7 +222,7 @@
           <v-btn
             color="orange"
             text
-            to="/dance"
+            to="/contest"
             class="font-weight-black"
             style="font-size: 22px; border-bottom: 2px solid #ff9800; boder-radius: 0;"
           >
