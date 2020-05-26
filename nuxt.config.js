@@ -6,16 +6,17 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    titleTemplate: 'わくわくフェスティバル2020',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+      { name: 'description', content: '名古屋で行われる地域限定わくわくフェスティバル2020では子供から大人まで愛犬と一緒に楽しめるイベントです！わんちゃんたちと最高の思い出を作りましょう！皆様のご参加お待ちしております。' },
+      { property: 'og:site_name', content: 'わくわくフェスティバル2020' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: 'わくわくフェスティバル2020' },
+      { property: 'og:description', content: '名古屋で行われる地域限定わくわくフェスティバル2020では子供から大人まで愛犬と一緒に楽しめるイベントです！わんちゃんたちと最高の思い出を作りましょう！皆様のご参加お待ちしております。' },
+      { property: 'og:url', content: 'https://wakuwakufes.com/' },
+      { property: 'og:image', content: 'https://wakuwakufes.com/img/fv.52bed8ce.jpg' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
