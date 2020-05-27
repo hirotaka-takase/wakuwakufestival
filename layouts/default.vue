@@ -24,8 +24,8 @@
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app color="warning">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <nuxt-link to="/" class="pl-5 pr-1"><i class="fas fa-paw" style="font-size: 20px; color: #fff;"></i></nuxt-link>
-      <nuxt-link to="/" class="headline font-weight-black" style="text-decoration: none; color: #fff;" v-text="title"></nuxt-link>
+      <nuxt-link to="/" class="pr-1"><i class="fas fa-paw" style="font-size: 20px; color: #fff;"></i></nuxt-link>
+      <nuxt-link to="/" class="title font-weight-black" style="text-decoration: none; color: #fff;" v-text="title"></nuxt-link>
       <nuxt-link to="/" class="pl-1"><i class="fas fa-paw" style="font-size: 20px; color: #fff;"></i></nuxt-link>
     </v-app-bar>
     <v-content>
@@ -134,3 +134,12 @@ export default {
   }
 }
 </script>
+
+<style>
+@media (max-width: 750px) {
+
+.header_title {
+  font-size: 1.1rem !important;
+}
+}
+</style>

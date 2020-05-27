@@ -15,7 +15,7 @@
         justify="center"
       >
         <v-col class="text-center" cols="12">
-          <p class="mb-0 text_aiken font-weight-black" style="letter-spacing: 0.4rem !important;">愛犬家大集合!</p>
+          <p class="mb-0 text_aiken font-weight-black" style="letter-spacing: 0.4rem !important;">愛犬家<br class="sp">大集合!</p>
         </v-col>
       </v-row>
     </v-parallax>
@@ -197,7 +197,7 @@
       <v-card class="mb-4">
         <v-img
           class="white--text"
-          height="300px"
+          height="320px"
           :src="img_src.banner"
         >
           <v-card-title
@@ -220,7 +220,7 @@
         </v-img>
         <v-card-text class="text--primary font-weight-black headline">東京から急遽出演決定！</v-card-text>
         <v-card-text class="text--primary title font-weight-bold">
-          <p><span class="display-1 font-weight-bold" style="line-height: 2.0;">男性ボーカルユニットBLACK IRIS</span><br>オリコンデイリーランキング1位<br>オリコンウィークリーランキング3位</p>
+          <p><span class="display-1 iris font-weight-bold" style="line-height: 2.0;">男性ボーカルユニットBLACK IRIS</span><br>オリコンデイリーランキング1位<br>オリコンウィークリーランキング3位</p>
         </v-card-text>
         <v-card-actions class="justify-center">
           <v-btn
@@ -271,8 +271,11 @@ export default {
 </script>
 
 <style>
+.sp {
+    display: none;
+}
 .parallax {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 ul {
   list-style-type: none;
@@ -356,11 +359,14 @@ animation:fuwafuwa 3s infinite linear alternate;
   width: 300px;
 }
 @media (max-width: 750px) {
+.sp {
+    display: block;
+}
 #fv {
    max-height: 250px;
 }
 .parallax {
-  margin-bottom: 120px;
+  margin-bottom: 30px;
 }
 .layout1 {
   margin-bottom: 90px;
@@ -406,7 +412,7 @@ animation:fuwafuwa 3s infinite linear alternate;
 }
 #banner-text p {
   font-size: 1.5rem!important;
-  line-height: 1.1;
+  line-height: 1;
 }
 #banner-text small {
   font-size: 1rem!important;
