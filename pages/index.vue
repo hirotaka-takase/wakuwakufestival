@@ -22,15 +22,17 @@
     <v-container>
       <v-layout column justify-center align-center class="layout1 text-center">
         <v-flex xs12 sm8 md6 class="py-4 font-weight-bold" style="margin-bottom: 90px;">
-          <v-row style="margin-bottom: 30px; position: relative;">
-            <v-chip
-              class="chip pa-3 body-1 caption fuwafuwa font-weight-black"
+          <v-row style="margin-bottom: 30px;">
+            <v-col cols="12" md="12" sm="12" class="mb-6">            
+              <v-chip
+              class="chip pa-4 caption fuwafuwa font-weight-black"
               color="error"
               text-color="white"
               x-large
-            >
-              お子様から大人まで<br>ご家族で楽しめるイベントです!
-            </v-chip>
+              >
+                お子様から大人まで<br>ご家族で楽しめるイベントです!
+              </v-chip>
+            </v-col>
             <v-col cols="12" md="12" sm="12" class="pa-0 display-1 font-weight-black">東海ペットイベント!</v-col>
             <v-col cols="12" md="12" sm="12" class="pt-0 display-1 mb-4 font-weight-black">たくさんのワンちゃんも見られますよ!</v-col>
           </v-row>
@@ -192,23 +194,25 @@
       </v-card>
       <p class="px-5 text-center silver-text font-weight-bold" style="color: #444444;">※シルバー優先席あります。ごゆっくりおくつろぎください</p>
       <v-layout column justify-center align-center class="text-center py-4 mb-4">
-      <v-card style="position: relative;" class="mb-4">
-          <v-chip
-            class="chip2 pa-3 fuwafuwa font-weight-black"
-            style="z-index: 1;"
-            color="error"
-            text-color="white"
-            x-large>
-              わくフェス
-            </v-chip>
+      <v-card class="mb-4">
         <v-img
           class="white--text"
-          height="310px"
+          height="300px"
           :src="img_src.banner"
         >
           <v-card-title
           id="banner-text">
+
             <v-row class="font-weight-bold wf-roundedmplus1c">
+              <v-col cols="12" md="3" class="pa-0">           
+                <v-chip
+                class="chip fuwafuwa font-weight-black"
+                color="error"
+                text-color="white"
+                large>
+                  わくフェス
+                </v-chip>
+              </v-col>
               <v-col cols="12" md="12"><p style="color: #6495ED">キッズダンスコンテスト<br><small>「子供と言ってあなどらないで！」</small></p></v-col>
               <v-col cols="12" md="12"><p style="color: #FA8072">ご当地アイドル男女でショー<br><small>「どんなかんじ？こんなかんじ！」</small></p></v-col>
             </v-row>
@@ -268,7 +272,7 @@ export default {
 
 <style>
 .parallax {
-  margin-bottom: 180px;
+  margin-bottom: 100px;
 }
 ul {
   list-style-type: none;
@@ -284,15 +288,7 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 .chip {
-  position: absolute;
-  top: -80px;
-  right: 280px;
-}
-.chip2 {
-  position: absolute;
-  left: -30px;
-  top: -20px;
-  font-size: 1.5rem !important;
+  font-size: 1.3rem !important;
 }
 .fuwafuwa {
 -webkit-animation:fuwafuwa 3s infinite linear alternate;
@@ -351,7 +347,7 @@ animation:fuwafuwa 3s infinite linear alternate;
 
 #banner-text p {
   font-size: 2.8rem!important;
-  line-height: 1.1;
+  line-height: 0.8;
 }
 #banner-text small {
   font-size: 1.5rem!important;
@@ -371,10 +367,6 @@ animation:fuwafuwa 3s infinite linear alternate;
 }
 .text_aiken {
   font-size: 50px;
-}
-.chip {
-  top: -80px;
-  right: 40px;
 }
 .kouryu {
   width: 100%;
@@ -413,15 +405,13 @@ animation:fuwafuwa 3s infinite linear alternate;
   margin-bottom: 100px !important;
 }
 #banner-text p {
-  font-size: 1.7rem!important;
+  font-size: 1.5rem!important;
   line-height: 1.1;
 }
 #banner-text small {
-  font-size: 1.2rem!important;
+  font-size: 1rem!important;
 }
-.chip2 {
-left: -10px;
-top: -50px;
+.chip {
 font-size: 1.0rem !important;
 }
 .btns {
