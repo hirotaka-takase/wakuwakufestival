@@ -264,7 +264,7 @@ export default {
     }
   },
   methods: {
-    handleScroll: function(evt, el) {
+    handleScroll(evt, el) {
       if (window.scrollY > 50) {
         el.setAttribute(
           "style",
