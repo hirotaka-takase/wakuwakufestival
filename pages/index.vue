@@ -15,11 +15,11 @@
         justify="center"
       >
         <v-col class="text-center" cols="12">
-          <p v-scroll="handleScroll" class="mb-0 text_aiken box font-weight-black" style="letter-spacing: 0.4rem !important;">愛犬家大集合!</p>
+          <p class="mb-0 text_aiken font-weight-black" style="letter-spacing: 0.4rem !important;">愛犬家大集合!</p>
         </v-col>
       </v-row>
     </v-parallax>
-    <v-container v-scroll="handleScroll" class="box">
+    <v-container>
       <v-layout column justify-center align-center class="layout1 text-center">
         <v-flex xs12 sm8 md6 class="py-4 font-weight-bold" style="margin-bottom: 90px;">
           <v-row style="margin-bottom: 30px; position: relative;">
@@ -262,26 +262,11 @@ export default {
         test: require("~/assets/img/dog1.jpg"),
       }
     }
-  },
-  methods: {
-    handleScroll(evt, el) {
-      if (window.scrollY > 50) {
-        el.setAttribute(
-          "style",
-          "opacity: 1; transform: translate3d(0, -30px, 0)"
-        );
-      }
-      return window.scrollY > 100;
-    }
   }
 }
 </script>
 
 <style>
-.box {
-  opacity: 0;
-  transition: 2.7s all cubic-bezier(0.42, 0, 0.58, 1.0);
-}
 .parallax {
   margin-bottom: 180px;
 }

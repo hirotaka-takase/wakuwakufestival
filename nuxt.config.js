@@ -47,7 +47,6 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '~plugins/scroll.js'
   ],
   /*
    ** Nuxt.js dev-modules
