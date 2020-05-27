@@ -28,6 +28,7 @@ export default {
    ** Customize router
    */
   router: {
+    base: '/wakuwakufestival',
     scrollBehavior: function (to, from, savedPosition) {
       return { x: 0, y: 0 }
     }
